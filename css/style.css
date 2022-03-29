@@ -107,6 +107,16 @@ a{
                 font-size: 2rem;
                 text-decoration: none;
                 color: #758A9E;
+                background-image: linear-gradient(currentColor, currentColor);
+   				background-position: 0% 100%;
+    			background-repeat: no-repeat;
+    			background-size: 0% 2px;
+    			transition: background-size .3s;
+            }
+            .nav ul li a:hover{
+                color: #317302;
+                font-weight: 600;
+                background-size: 100% 2px;
             }
 
 .navImg{
@@ -123,6 +133,7 @@ a{
     min-height: 50vh;
     background-position: center;
 }
+
 
 .encabezado__box--white{
     background-color: rgba(255, 255, 255, 0.75);
@@ -560,7 +571,23 @@ aside div a{
         margin: 15px;
     }
 
+    /* animacion del encabezado */
+    .encabezado{
+        height: 40vh;
+        background-image: url(img/header.jpg);
+        animation-name: animationHeader;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+        animation-timing-function: ease;
+        background-size: cover;
+    }
     
+    @keyframes animationHeader{
+        0%{background-image: url(../img/header.jpg)}
+        50%{background-image: url(../img/header2.jpg)}
+        100%{background-image: url(../img/header3.jpg);}
+    }
 }
 
 @media (min-width: 1200px){
