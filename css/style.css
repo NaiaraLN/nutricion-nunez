@@ -1,0 +1,642 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans&display=swap');
+
+*{
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* SELECTORES DE ETIQUETA */
+
+html{
+    font-size: 62.5%;
+   
+}
+
+h1,h2{
+    color: #317302;
+}
+
+h3{
+    color: #758A9E;
+}
+
+header div p{
+    color: #758A9E;
+    font-family: 'Dancing Script', cursive;
+    font-size: 4.5rem;
+    font-weight: 400;
+    line-height: 5rem;
+    text-align: center;
+}
+
+p,a{
+    color: #758A9E;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+}
+
+
+a{
+    text-decoration: none;
+    color: #758A9E;
+
+
+}          
+
+/* TERMINA SELECTORES DE ETIQUETA */
+
+/* GRID LAYOUT */
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "nav" "header" "main" "aside" "footer";
+    
+}
+
+#nav{
+    grid-area: nav;
+
+}
+
+#header{
+    grid-area: header;
+    
+}
+
+#main{
+    grid-area: main;
+}
+
+#aside{
+    grid-area: aside;
+}
+
+#footer{
+    grid-area: footer;
+}
+
+/* TERMINA EL GRID LAYOUT */
+
+/* SELECTORES BEM */
+
+/* NAV */
+
+.nav{
+    background-color: rgba(246, 206, 170, 0.75);
+    position: sticky;
+    top: 0;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    .nav ul{   
+        display: flex;
+
+    }
+        .nav ul li{
+            list-style: none;
+            margin-right: 10px;
+        }
+            .nav ul li a{
+                font-size: 2rem;
+                text-decoration: none;
+                color: #758A9E;
+            }
+
+.navImg{
+    width: 250x;
+    margin-bottom: 15px;
+}
+          
+/* ENCABEZADO */
+
+.encabezado{
+    background-image: url(../img/header.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 50vh;
+    background-position: center;
+}
+
+.encabezado__box--white{
+    background-color: rgba(255, 255, 255, 0.75);
+    margin: 10px auto;
+    padding: 10px 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* MAIN DE INDEX */
+
+
+.index section article p{
+    text-align: justify;
+}
+
+.index__articulo--yo{
+    background-color: #8DB173; 
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: none;
+
+}
+
+.index__titulo--xxl{
+    font-size: 4.5rem;
+    line-height: 5rem;
+    text-align: center;
+}
+
+.index__titulo--xl{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.index__img--center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.index__img--md{
+    width: 40%;
+}
+
+
+.index__section--blog{
+    background-color: #F6F2A8; 
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: none;
+
+}
+
+.index__section--recetas{
+    background-color: #E99481; 
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: none;
+
+}
+
+.index__articulo--white{
+    background-color: rgba(178, 190, 202, 0.5);
+    margin: 10px auto;
+    padding: 10px 20px;
+    width: 70%;
+}
+
+
+/* MAIN DE SOBRE MI */
+
+.mainYo section article div p{
+    text-align: center;
+}
+.main__yo--articulo{
+    background-color: #8DB173;
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    border: none;
+}
+
+.yo__titulo--xxl{
+    font-size: 4.5rem;
+    line-height: 5rem;
+    text-align: center;
+}
+
+
+.yo__img--center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.yo__img--md{
+    width: 40%;
+}
+
+/* MAIN DE BLOG */
+
+.blog section article div p{
+    text-align: left;
+}
+
+.div__titulo{
+    background-color: #F6F2A8;
+    margin: 20px;
+}
+.blog__articulo{
+    background-color: #F6F2A8;
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    border: none;
+}
+
+.blog__titulo--xxl{
+    font-size: 4.5rem;
+    line-height: 5rem;
+    text-align: center;
+}
+
+.blog__titulo--xl{
+    font-size: 3rem;
+    line-height: 3.4rem;
+    text-align: center;
+}
+
+.blog__img--center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.blog__img--md{
+    width: 50%;
+}
+
+/* MAIN DE RECETAS */
+
+.recetas section article div p{
+    text-align: left;
+}
+
+.div__titulo--recetas{
+    background-color: #E99481;
+    margin: 20px;
+}
+.recetas__articulo{
+    background-color: #E99481;
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    border: none;
+}
+
+.recetas__titulo--xxl{
+    font-size: 4.5rem;
+    line-height: 5rem;
+    text-align: center;
+}
+
+.recetas__titulo--xl{
+    font-size: 3rem;
+    line-height: 3.4rem;
+    text-align: center;
+}
+
+.recetas__img--center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.recetas__img--md{
+    width: 50%;
+}
+
+/* MAIN DE CONTACTO */
+
+form, input{
+    display: flex;
+    flex-direction: column;
+}
+
+legend, label, input, textarea{
+    margin-bottom: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.3rem;
+    color: #758A9E;
+    width: 100%;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+fieldset{
+    box-sizing: border-box;
+    border: none;
+}
+
+.contacto__articulo{
+    margin: 20px;
+}
+
+.contacto__form{
+    background-color: #F6CEAA;
+    width: 50%;
+    height: auto;
+    margin: 10px auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: none;
+
+}
+
+.contacto__form--button{
+    background-color: #B2BECA;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: none;
+}
+
+.contacto__titulo--xl{
+    font-size: 3rem;
+    text-align: center;
+    color: #758A9E;
+}
+
+
+/* CLASES DEL ASIDE */
+
+.aside{
+    background-color: rgba(178, 190, 202, 0.5);
+    color: #758A9E;
+    padding: 15px 30px;
+    margin: 10px auto;
+    width: 90%;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.aside__titulo--sm{
+    font-size: 2rem;
+}
+
+.aside__img--center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.aside__img--sm{
+    width: 20%
+}
+
+aside div a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* FOOTER */
+
+.pie{
+    background-color: #317302;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.pie a{
+    color: #B2BECA;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    display: flex;
+
+}
+
+.pie div{
+    display: flex;
+    flex-direction: row;
+}
+
+.pie__icon--sm{
+    width: 30px;
+}
+
+.pie__icon--md{
+    width: 50px;
+}
+
+.pie__icon--right{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+/* TERMINAN LOS SELECTORES BEM */
+
+/* MEDIA QUERI */
+
+@media (min-width: 768px){
+
+    
+    .contenedor{
+        grid-template-columns: 80vw 20vw;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: 
+        "nav nav"
+        "header header"
+        "main aside"
+        "footer footer"
+    }
+
+    .nav{
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between; 
+    }
+
+    .encabezado__box--white{
+        width: 50%;
+        margin: 0 50%;
+    }
+
+    .aside__img--sm{
+        width: 50%;
+    }
+
+    /* CAMBIOS EN SOBRE MI */
+
+    .yo__img--md{
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px){
+    .contenedor{
+        grid-template-columns: 70vw 30vw;
+        grid-template-rows: repeat(4,auto);
+        grid-template-areas: 
+        "nav nav"
+        "header header"
+        "main aside"
+        "footer footer";
+    }
+
+    /* acomodo texto y la imágen de "sobre mi" en index*/
+
+    .index__img--center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        width: 100vw;
+    }
+    
+    .index__img--md{
+        width: 100%;
+    }
+
+    .divYo{
+        display: flex;
+        text-align: left;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin: 15px;
+    }
+
+    /* CAMBIOS EN MAIN DE SOBRE MI */
+    .main__yo--articulo div p{
+        padding: 10px;
+
+    }
+    .yo__img--center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        width: 100vw;
+    }
+    
+    .yo__img--md{
+        width: 100%;
+    }
+
+    .div__yo{
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: center;
+        align-items: center;
+        margin: 15px;
+    }
+    .div__experiencia{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        margin: 15px;
+    }
+
+    
+}
+
+@media (min-width: 1200px){
+    .contenedor{
+        grid-template-columns: 80vw 20vw;
+        grid-template-rows: repeat(4,auto);
+        grid-template-areas: 
+        "nav nav"
+        "header header"
+        "main aside"
+        "footer footer";
+    }
+
+    .index__div--flex{
+        display: flex;
+    }
+
+    .index__articulo--white{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* CAMBIOS EN MAIN DE BLOG */
+
+    .blog__articulo div p{
+        padding: 10px;
+
+    }
+    .blog__img--center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        width: 100vw;
+    }
+    
+    .blog__img--md{
+        width: 100%;
+    }
+
+    .div__blog{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        margin: 15px;
+    }
+
+    /* CAMBIOS EN MAIN DE RECETAS */
+    .recetas__articulo div p{
+        padding: 10px;
+
+    }
+    .recetas__img--center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        width: 100vw;
+    }
+    
+    .recetas__img--md{
+        width: 100%;
+    }
+
+    .div__recetas{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        margin: 15px;
+    }
+
+}
+
+
