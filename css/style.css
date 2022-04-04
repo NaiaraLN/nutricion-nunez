@@ -22,15 +22,6 @@ h3{
     color: #758A9E;
 }
 
-header div p{
-    color: #758A9E;
-    font-family: 'Dancing Script', cursive;
-    font-size: 4.5rem;
-    font-weight: 400;
-    line-height: 5rem;
-    text-align: center;
-}
-
 p,a{
     color: #758A9E;
     font-size: 2rem;
@@ -102,8 +93,7 @@ a{
 .navImg{
     width: 150px;
     margin-bottom: 10px;
-}
-       
+} 
 
 /* MAIN DE INDEX */
 
@@ -476,7 +466,7 @@ fieldset{
 
     /* INDEX */
     .index__articulo--white{
-        margin: 10px 15px;
+        margin: 10px 10px;
     }
 
 
@@ -554,8 +544,8 @@ fieldset{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 15px;
-        width: 100vw;
+        margin: 15px auto;
+        width: 100%;
     }
     
     .index__img--md{
@@ -575,19 +565,33 @@ fieldset{
         width: 50%;
     }
 
+
+    /* CONTACTO botones */
+    .contactoButton{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .contacto__form--button{
+        width: 50%;
+    }
+    .contactoButton button:hover{
+        background-color: #F07859;
+
+    }
+
     /* CAMBIOS EN MAIN DE SOBRE MI */
-    .main__yo--articulo div p{
-        padding: 10px;
+   .main__yo--articulo div p{
+    padding: 10px;
 
     }
     .yo__img--center{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 10px;
-        width: 100vw;
+        margin: 10px auto;
+        width: 100%;
     }
-    
+
     .yo__img--md{
         width: 100%;
     }
@@ -607,18 +611,6 @@ fieldset{
         margin: 15px;
     }
 
-    /* CONTACTO botones */
-    .contactoButton{
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    .contacto__form--button{
-        width: 50%;
-    }
-    .contactoButton button:hover{
-        background-color: #F07859;
-
-    }
     /* CAMBIOS EN MAIN DE BLOG */
 
     .blog__articulo div p{
@@ -629,8 +621,8 @@ fieldset{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 10px;
-        width: 100vw;
+        margin: 10px auto;
+        width: 100%;
     }
     
     .blog__img--md{
@@ -654,8 +646,8 @@ fieldset{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 10px;
-        width: 100vw;
+        margin: 10px auto;
+        width: 100%;
     }
     
     .recetas__img--md{
