@@ -54,7 +54,7 @@ a{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "nav" "header" "main" "aside" "footer";
+    grid-template-areas: "nav" "header" "main" "footer";
     
 }
 
@@ -72,10 +72,6 @@ a{
     grid-area: main;
 }
 
-#aside{
-    grid-area: aside;
-}
-
 #footer{
     grid-area: footer;
 }
@@ -88,17 +84,9 @@ a{
 
 .nav{
     background-color: rgba(246, 206, 170, 0.75);
-    position: sticky;
     top: 0;
     padding: 10px 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
-    .nav ul{   
-        display: flex;
-
-    }
         .nav ul li{
             list-style: none;
             margin-right: 10px;
@@ -107,21 +95,13 @@ a{
                 font-size: 2rem;
                 text-decoration: none;
                 color: #758A9E;
-                background-image: linear-gradient(currentColor, currentColor);
-   				background-position: 0% 100%;
-    			background-repeat: no-repeat;
-    			background-size: 0% 2px;
-    			transition: background-size .3s;
-            }
-            .nav ul li a:hover{
-                color: #317302;
-                font-weight: 600;
-                background-size: 100% 2px;
+                display: block;
+                padding: 0.5rem 1rem;
             }
 
 .navImg{
-    width: 250x;
-    margin-bottom: 15px;
+    width: 150px;
+    margin-bottom: 10px;
 }
           
 /* ENCABEZADO */
@@ -394,43 +374,6 @@ fieldset{
 }
 
 
-/* CLASES DEL ASIDE */
-
-.aside{
-    background-color: rgba(178, 190, 202, 0.5);
-    color: #758A9E;
-    padding: 15px 30px;
-    margin: 10px auto;
-    width: 90%;
-	font-size: 1.5rem;
-	line-height: 2rem;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.aside__titulo--sm{
-    font-size: 2rem;
-}
-
-.aside__img--center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 15px;
-}
-
-.aside__img--sm{
-    width: 20%
-}
-
-aside div a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
 /* FOOTER */
 
 .pie{
@@ -471,24 +414,34 @@ aside div a{
 
 /* MEDIA QUERI */
 
+@media (min-width: 992px) { 
+    /* AGRANDO LOGO DE LA NAV Y AGREGO ANIMACIONES */
+    .nav ul li{
+        border-left: 1px solid #758A9E;
+        padding: 10px 10px;
+    }
+        .nav ul li a{
+            background-image: linear-gradient(currentColor, currentColor);
+   			background-position: 0% 100%;
+    		background-repeat: no-repeat;
+    		background-size: 0% 2px;
+    		transition: background-size .3s;
+        }
+        .nav ul li a:hover{
+            color: #317302;
+            font-weight: 600;
+            background-size: 100% 2px;
+        }
+
+    .navImg{
+        width: 250px;
+        margin-bottom: 10px;
+    }
+
+
+}
+
 @media (min-width: 768px){
-
-    
-    .contenedor{
-        grid-template-columns: 80vw 20vw;
-        grid-template-rows: repeat(4, auto);
-        grid-template-areas: 
-        "nav nav"
-        "header header"
-        "main aside"
-        "footer footer"
-    }
-
-    .nav{
-        flex-direction: row;
-        align-items: flex-end;
-        justify-content: space-between; 
-    }
 
     .encabezado__box--white{
         width: 50%;
@@ -507,14 +460,10 @@ aside div a{
 }
 
 @media (min-width: 1024px){
-    .contenedor{
-        grid-template-columns: 70vw 30vw;
-        grid-template-rows: repeat(4,auto);
-        grid-template-areas: 
-        "nav nav"
-        "header header"
-        "main aside"
-        "footer footer";
+
+    /* Agrando el logo de la nav */
+    .navImg{
+        width: 300px;
     }
 
     /* acomodo texto y la imágen de "sobre mi" en index*/
@@ -592,13 +541,13 @@ aside div a{
 
 @media (min-width: 1200px){
     .contenedor{
-        grid-template-columns: 80vw 20vw;
+        grid-template-columns: 100%;
         grid-template-rows: repeat(4,auto);
         grid-template-areas: 
-        "nav nav"
-        "header header"
-        "main aside"
-        "footer footer";
+        "nav"
+        "header"
+        "main"
+        "footer";
     }
 
     .index__div--flex{
