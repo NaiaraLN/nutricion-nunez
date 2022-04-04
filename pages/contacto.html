@@ -26,19 +26,19 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class=" active" aria-current="page" href="../index.html">Inicio</a>
+                <a class=" active" aria-current="page" href="../index.html">INICIO</a>
               </li>
               <li class="nav-item">
-                <a href="sobre-mi.html">Sobre mí</a>
+                <a href="sobre-mi.html">SOBRE MI</a>
               </li>
               <li class="nav-item">
-                <a href="blog.html">Blog</a>
+                <a href="blog.html">BLOG</a>
               </li>
               <li class="nav-item">
-                <a href="recetas.html">Recetas</a>
+                <a href="recetas.html">RECETAS</a>
               </li>
               <li class="nav-item">
-                <a href="contacto.html">Contacto</a>
+                <a href="contacto.html">CONTACTO</a>
               </li>
             </ul>
           </div>
@@ -88,26 +88,31 @@
             <article class="contacto__articulo">
                 <h1 class="contacto__titulo--xl">Pedí tu consulta</h1>
                 <!--Inicia el form-->
-                <form action="consulta.php" class="contacto__form">
+                <form class="contacto__form">
                     <fieldset>
-                        <legend>Datos personales</legend>
-                        <label for="nombre">Nombre y Apellido</label>
-                        <input type="text" placeholder="Naiara Nuñez" name="nombre" id="nombre">
-                        
-                        <label for="email">Email</label>
-                        <input type="email" placeholder="mail@mail.com" name="email" id="email">
-                        
-                        <label for="tel">Teléfono</label>
-                        <input type="tel" placeholder="(código de área) número" name="tel" id="tel">
-                </fieldset>
-                
-                <label for="mensaje">Dejá tu mensaje</label>
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-                
-                <input type="reset" value="Cancelar" class="contacto__form--button">
-                <input type="submit" value="Enviar" class="contacto__form--button">
-                
-                </form>
+                        <legend class="contactoText">Datos Personales</legend>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label contactoText">Email</label>
+                      <input type="email" placeholder="mail@mail.com" class="form-control contactoText" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label contactoText">Nombre y Apellido</label>
+                        <input type="text" placeholder="Naiara Nuñez" class="form-control contactoText" id="nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="tel" class="form-label contactoText">Teléfono</label>
+                        <input type="tel" placeholder="(código de área) número" class="form-control contactoText"  name="tel" id="tel">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label contactoText">Dejá tu mensaje</label>
+                        <textarea class="form-control contactoText" id="exampleFormControlTextarea1" cols="30" rows="10"></textarea>
+                    </div>
+                    </fieldset>
+                    <div class="contactoButton">  
+                    <button type="submit" class="btn contacto__form--button">Enviar</button>
+                    <button type="reset" class="btn contacto__form--button">Cancelar</button>
+                    </div>
+                  </form>
                 <!--cierra el form-->
             </article>
         </section>

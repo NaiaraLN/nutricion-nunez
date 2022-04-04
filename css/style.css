@@ -319,16 +319,6 @@ form, input{
     flex-direction: column;
 }
 
-legend, label, input, textarea{
-    margin-bottom: 10px;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 2rem;
-    font-weight: 400;
-    line-height: 2.3rem;
-    color: #758A9E;
-    width: 100%;
-}
-
 textarea{
     min-height: 100px;
     max-height: 200px;
@@ -338,6 +328,16 @@ textarea{
 fieldset{
     box-sizing: border-box;
     border: none;
+}
+
+.contactoText{
+    margin-bottom: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.3rem;
+    color: #758A9E;
+    width: 100%;
 }
 
 .contacto__articulo{
@@ -354,13 +354,19 @@ fieldset{
     border: none;
 
 }
-
+.contactoButton{
+    display: flex;
+    flex-direction: column;
+}
 .contacto__form--button{
     background-color: #B2BECA;
     color: white;
+    font-family:'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
     justify-content: center;
     align-items: center;
     padding: 10px;
+    margin: 10px;
     border: none;
 }
 
@@ -422,6 +428,8 @@ fieldset{
         line-height: 2rem;
         text-align: center;
     }
+
+
 }
 @media (min-width: 768px){
 
@@ -445,7 +453,7 @@ fieldset{
     /* AGRANDO LOGO DE LA NAV Y AGREGO ANIMACIONES */
     .nav ul li{
         border-left: 1px solid #758A9E;
-        padding: 10px 10px;
+        padding: 10px 5px;
     }
         .nav ul li a{
             background-image: linear-gradient(currentColor, currentColor);
@@ -498,6 +506,11 @@ fieldset{
     .index__div--flex{
         display: flex;
         flex-direction: row;
+    }
+
+    /* Contacto agrando letra */
+    .contactoText{
+        font-size: 2rem;
     }
 }
 
@@ -568,23 +581,20 @@ fieldset{
         margin: 15px;
     }
 
-    /* animacion del encabezado */
-    .encabezado{
-        height: 40vh;
-        background-image: url(img/header.jpg);
-        animation-name: animationHeader;
-        animation-duration: 10s;
-        animation-iteration-count: infinite;
-        animation-delay: 1s;
-        animation-timing-function: ease;
-        background-size: cover;
+    /* CONTACTO botones */
+    .contactoButton{
+        flex-direction: row;
+        justify-content: space-evenly;
     }
-    
-    @keyframes animationHeader{
-        0%{background-image: url(../img/header.jpg)}
-        50%{background-image: url(../img/header2.jpg)}
-        100%{background-image: url(../img/header3.jpg);}
+    .contacto__form--button{
+        width: 50%;
     }
+    .contactoButton button:hover{
+        background-color: #F07859;
+
+    }
+
+   
 }
 
 @media (min-width: 1200px){
