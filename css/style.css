@@ -474,6 +474,12 @@ fieldset{
         margin-bottom: 10px;
     }
 
+    /* INDEX */
+    .index__articulo--white{
+        margin: 10px 15px;
+    }
+
+
     /* Links del index en la parte de sobre mi */
     .divButton a{
         background-image: linear-gradient(currentColor, currentColor);
@@ -524,7 +530,14 @@ fieldset{
     }
 
     /* RECETAS TITULOS */
-    
+    .recetas__titulo--xxl{
+        font-size: 4.5rem;
+        line-height: 5rem;
+    }
+    .recetas__titulo--xl{
+        font-size: 3rem;
+        line-height: 3.4rem;
+    }
 }
 
 
@@ -606,33 +619,6 @@ fieldset{
         background-color: #F07859;
 
     }
-
-   
-}
-
-@media (min-width: 1200px){
-    .contenedor{
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(4,auto);
-        grid-template-areas: 
-        "nav"
-        "header"
-        "main"
-        "footer";
-    }
-
-    .index__div--flex{
-        display: flex;
-    }
-
-    .index__articulo--white{
-        width: 30%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
     /* CAMBIOS EN MAIN DE BLOG */
 
     .blog__articulo div p{
@@ -657,9 +643,9 @@ fieldset{
         text-align: center;
         align-items: center;
         margin: 15px;
-    }
-
-    /* CAMBIOS EN MAIN DE RECETAS */
+    } 
+    
+    /* Cambios en MAIN DE RECETAS */
     .recetas__articulo div p{
         padding: 10px;
 
@@ -683,6 +669,24 @@ fieldset{
         align-items: center;
         margin: 15px;
     }
+
+   
+}
+
+@media (min-width: 1200px){
+
+    .index__div--flex{
+        display: flex;
+    }
+
+    .index__articulo--white{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+   
 
 }
 
