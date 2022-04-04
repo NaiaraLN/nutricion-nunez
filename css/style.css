@@ -229,7 +229,7 @@ a{
 /* MAIN DE BLOG */
 
 .blog section article div p{
-    text-align: left;
+    text-align: justify;
 }
 
 .div__titulo{
@@ -247,14 +247,14 @@ a{
 }
 
 .blog__titulo--xxl{
-    font-size: 4.5rem;
-    line-height: 5rem;
+    font-size: 3rem;
+    line-height: 3.5rem;
     text-align: center;
 }
 
 .blog__titulo--xl{
-    font-size: 3rem;
-    line-height: 3.4rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
     text-align: center;
 }
 
@@ -290,14 +290,14 @@ a{
 }
 
 .recetas__titulo--xxl{
-    font-size: 4.5rem;
-    line-height: 5rem;
+    font-size: 3rem;
+    line-height: 3.5rem;
     text-align: center;
 }
 
 .recetas__titulo--xl{
-    font-size: 3rem;
-    line-height: 3.4rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
     text-align: center;
 }
 
@@ -512,6 +512,19 @@ fieldset{
     .contactoText{
         font-size: 2rem;
     }
+
+    /* BLOG TITULOS */
+    .blog__titulo--xxl{
+        font-size: 4.5rem;
+        line-height: 5rem;
+    }
+    .blog__titulo--xl{
+        font-size: 3rem;
+        line-height: 3.4rem;
+    }
+
+    /* RECETAS TITULOS */
+    
 }
 
 
