@@ -52,10 +52,34 @@
 
     <!-- INICIA HEADER -->
   
-    <header id="header" class="encabezado">
-        <div class="encabezado__box--white">
-        <p>"Nuestro cuerpo es el mismo, en todas las estaciones del año, y toda la vida. Tratalo con Amor"</p>
-        </div>
+    <header class="header">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/header.jpg" class="d-block w-100" alt="Desayuno Saludable">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/header2.jpg" class="d-block w-100" alt="Verduras en la mesa">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/header3.jpg" class="d-block w-100" alt="Jugos">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
     </header>
 
     <!-- TERMINA HEADER -->
@@ -63,7 +87,7 @@
     <!-- INICIA MAIN -->
 
 
-    <main id="main" class="index">
+    <main class="main index">
 
         <!-- INICIA SOBRE MI -->
     
@@ -79,9 +103,10 @@
                     <p>Bienvenid@s a mi página! Me llamo Celeste Chambeaud Helguera. Soy Licenciada en Nutrición en la UBA, me especializo en Obesidad y en nutrición aplicada al Deporte. Actualmente trabajo de forma independiente realizando consultas online.
                     Los invito a leer más sobre mi desarrollo profesional y la modalidad de consulta que empleo.</p>
                 </div>
-                <a href="pages/sobre-mi.html" >Leer más</a>
-                <a href="pages/contacto.html" >Contacto</a>
-                
+                <div class="divButton">
+                    <a href="pages/sobre-mi.html" >Leer más</a>
+                    <a href="pages/contacto.html" >Contacto</a>
+                </div>
             </article>
         </section>
         
@@ -93,15 +118,15 @@
                 <h2 class="index__titulo--xxl">Blog</h2>
             </a>
             <div class="index__div--flex">
-                <article class="index__articulo--white">
+                <article class="index__articulo--white linkHover">
                     <h3 class="index__titulo--xl">¿Qué tipo de actividad física me conviene hacer?</h3>
-                    <a href="pages/blog.html">Pasá y lee este blog!</a>
+                    <a href="pages/blog.html" >Pasá y lee este blog!</a>
                 </article>
-                <article class="index__articulo--white">
+                <article class="index__articulo--white linkHover">
                     <h3 class="index__titulo--xl">DOMINGO SIN REDES</h3>
-                    <a href="pages/blog.html">Pasa y lee este blog!</a>
+                    <a href="pages/blog.html" >Pasa y lee este blog!</a>
                 </article>
-                <article class="index__articulo--white">
+                <article class="index__articulo--white linkHover">
                     <h3 class="index__titulo--xl">MEJORES METAS, MEJORES RESULTADOS</h3>
                     <a href="pages/blog.html">Pasa y lee este blog!</a>
                 </article>
@@ -145,7 +170,7 @@
     <!-- INICIA FOOTER -->
    
    
-    <footer id="footer" class="pie">
+    <footer class="footer pie">
         <div class="pie__icon--right"> 
             <img src="img/ce.png" alt="Ícono de NutriendoCe" class="pie__icon--sm" >
         </div>
