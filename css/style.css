@@ -325,18 +325,19 @@ fieldset{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.5rem;
     font-weight: 400;
-    line-height: 2.3rem;
+    line-height: 2rem;
     color: #758A9E;
     width: 100%;
 }
 
 .contacto__articulo{
-    margin: 20px;
+    margin: 10px auto;
+
 }
 
 .contacto__form{
     background-color: #F6CEAA;
-    width: 50%;
+    width: 80%;
     height: auto;
     margin: 10px auto;
     padding: 10px 20px;
@@ -507,6 +508,9 @@ fieldset{
     /* Contacto agrando letra */
     .contactoText{
         font-size: 2rem;
+    }
+    .contacto__form{
+        width: 50%;
     }
 
     /* BLOG TITULOS */
