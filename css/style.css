@@ -119,6 +119,11 @@ a{
     justify-content: space-around;
     align-items: center;
 }
+.divButton a:hover{
+    color: #317302;
+    font-weight: 600;
+    background-size: 100% 2px;
+}
 
 .index__titulo--xxl{
     font-size: 4.5rem;
@@ -258,6 +263,10 @@ a{
 .blog__img--md{
     width: 50%;
 }
+.linkHover a:hover{
+    color: #317302;
+    font-weight: 600;
+    background-size: 100% 2px;
 
 /* MAIN DE RECETAS */
 
@@ -348,6 +357,10 @@ fieldset{
 .contactoButton{
     display: flex;
     flex-direction: column;
+}
+.contactoButton button:hover{
+    background-color: #F07859;
+
 }
 .contacto__form--button{
     background-color: #B2BECA;
