@@ -33,8 +33,6 @@ p,a{
 a{
     text-decoration: none;
     color: #758A9E;
-
-
 }          
 
 /* TERMINA SELECTORES DE ETIQUETA */
@@ -222,7 +220,7 @@ a{
 }
 
 .yo__img--md{
-    width: 40%;
+    width: 60%;
 }
 
 /* MAIN DE BLOG */
@@ -262,6 +260,14 @@ a{
     justify-content: center;
     align-items: center;
     margin: 15px;
+}
+
+.btn-blog{
+    color: black;
+    background-color: #B2BECA;
+}
+.btn-blog:hover{
+    background-color: rgb(239,232,98);
 }
 
 .blog__img--md{
@@ -309,6 +315,16 @@ a{
 
 .recetas__img--md{
     width: 50%;
+}
+
+.btn-recetas{
+    color: black;
+    background-color: #B2BECA;
+    font-size: 1.5rem;
+}
+
+.btn-recetas:hover{
+    background-color: #F07859;
 }
 
 /* MAIN DE CONTACTO */
@@ -561,7 +577,7 @@ fieldset{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 15px auto;
+        margin: 15px 20px;
         width: 100%;
     }
     
